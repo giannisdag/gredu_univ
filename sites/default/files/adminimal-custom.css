@@ -1,0 +1,32 @@
+input#edit-preview, input#edit-next, input#preview-submit, input.ief-entity-submit, input[type="submit"][id^="edit-return"], .field-widget-inline-entity-form .ief-entity-operations input[id*="edit"] {
+    background: #0074bd none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Lucida Grande",Verdana,sans-serif;
+    font-size: 1.077em;
+    font-weight: normal;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    padding: 6px 10px;
+    text-align: center;
+    transition: all 0s ease 0s, all 0.3s ease 0s;
+	display:none;
+}
+
+/*ul.primary {
+    background: #ebebeb none repeat scroll 0 0;
+    border-bottom: 0 none;
+    clear: both;
+    display: table;
+    float: left;
+    font-size: 0.923em;
+    height: auto;
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 0;
+    width: 100%;
+display:none;
+	}*/
