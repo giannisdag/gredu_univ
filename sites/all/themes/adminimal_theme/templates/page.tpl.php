@@ -7,13 +7,12 @@
 
 <div id="branding" class="clearfix">
 
+<h1 class="page-title"><?php print render($site_name); ?></h1>
+
 	<?php print $breadcrumb; ?>
 
 	<?php print render($title_prefix); ?>
 
-	<?php if ($title): ?>
-		<h1 class="page-title"><?php print $title; ?></h1>
-	<?php endif; ?>
 
 	<?php print render($title_suffix); ?>
 
@@ -21,9 +20,17 @@
 
 <div id="navigation">
 
-  <?php if ($primary_local_tasks): ?>
+	<?php $menu = menu_tree('main-menu');
+	$menuhtml = drupal_render($menu);?>
+	<div class="tabs-primary clearfix"><ul class="tabs primary"><?php print_r($menuhtml); ?></ul></div>
+	
+	<!--<?php  if (!drupal_is_front_page()): ?>
+		<h1 class="page-title"><?php print $title; ?></h1>
+	<?php endif; ?>-->
+	
+  <!--<?php if ($primary_local_tasks): ?>
     <?php print render($primary_local_tasks); ?>
-  <?php endif; ?>
+  <?php endif; ?>-->
 
   <?php if ($secondary_local_tasks): ?>
     <div class="tabs-secondary clearfix"><ul class="tabs secondary"><?php print render($secondary_local_tasks); ?></ul></div>

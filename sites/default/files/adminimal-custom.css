@@ -30,3 +30,58 @@ input#edit-preview, input#edit-next, input#preview-submit, input.ief-entity-subm
     width: 100%;
 display:none;
 	}*/
+
+
+.tabledrag-toggle-weight {
+    display: none;
+    font-size: 0.9em;
+}
+
+
+#branding div.breadcrumb {
+    color: #888888;
+    display: none;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+select {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    box-sizing: inherit;
+    color: #333;
+    outline: 2px solid transparent;
+    outline-offset: 0;
+    padding: 5px 7px;
+    transition: all 0s ease 0s, all 0.1s ease 0s;
+    vertical-align: baseline;
+    width: 200px;
+}
+
+#navigation{
+    overflow: hidden;
+    padding: 10px 20px 0;
+    position: relative;
+}
+
+#navigation h1.page-title {
+    color: #000000;
+    float: left;
+    font-family: "Open Sans","Segoe UI","Helvetica",sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 38px;
+    margin: 0;
+    padding: 0 0 12px;
+}
+
+fieldset legend {
+    background: white none repeat scroll 0 0;
+    display: none;
+    font-family: "Open Sans","Segoe UI","Helvetica",sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 0 -3px;
+    padding: 0 6px;
+	display:none;
+}

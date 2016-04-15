@@ -44,7 +44,7 @@ function node_limit_role_node_limit_applies_in_context($lid, $node, $user) {
 /**
  * Implements hook_node_limit_sql().
  */
-function node_limit_role_node_limit_sql($lid, SelectQuery $select) {
+/*function node_limit_role_node_limit_sql($lid, SelectQuery $select) {
   $limit = node_limit_role_node_limit_load($lid);
   if (empty($limit)) return;
   
@@ -60,7 +60,18 @@ function node_limit_role_node_limit_sql($lid, SelectQuery $select) {
       ->condition('rid', $limit['node_limit_role']['rid']);
     $select->condition('uid', $subselect, 'IN');
   }
+}*/
+
+/*patched by kkaraogl*/
+function node_limit_role_node_limit_sql($lid, SelectQuery $select) {
+  global $user;
+
+  $limit = node_limit_role_node_limit_load($lid);
+  if (empty($limit)) return;
+
+  $select->condition('uid', $user->uid, '=');
 }
+
 
 /**
  * Implements hook_node_limit_element().

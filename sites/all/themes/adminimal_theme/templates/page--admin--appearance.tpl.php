@@ -7,6 +7,7 @@
 
 <div id="branding" class="clearfix">
 
+	<h1 class="page-title"><?php print render($page['$site_name']); ?></h1>
 	<?php print $breadcrumb; ?>
 
 	<?php print render($title_prefix); ?>

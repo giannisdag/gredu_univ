@@ -1,0 +1,21 @@
+
+/*
+ * Note: your browser may not support the markup you had in mind for your
+ * option lists. Firefox is generally good. In Chrome and Safari colours tend
+ * to work, but font styles are often ignored.
+ */
+.option-parent {
+  /*font-weight: bolder;*/
+  font-weight: normal;
+  color: black;
+  /*background-color: lightblue !important;*/
+}
+.option-child {
+  font-weight: normal;
+  color: black !important;
+  background-color: white;
+}
+/*select.with-style option[selected="selected"] {
+  font-style: italic;
+}*/
+
