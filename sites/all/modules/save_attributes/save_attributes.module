@@ -1,5 +1,6 @@
 <?php
 
+
 function save_attributes_user_login(&$edit, $account) {
   $attributes = simplesamlphp_auth_get_attributes();
   
