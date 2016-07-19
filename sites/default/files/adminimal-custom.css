@@ -15,7 +15,7 @@ input#edit-preview, input#edit-next, input#preview-submit, input.ief-entity-subm
 	display:none;
 }
 
-/*ul.primary {
+ul.primary {
     background: #ebebeb none repeat scroll 0 0;
     border-bottom: 0 none;
     clear: both;
@@ -28,8 +28,8 @@ input#edit-preview, input#edit-next, input#preview-submit, input.ief-entity-subm
     padding-right: 8px;
     padding-top: 0;
     width: 100%;
-display:none;
-	}*/
+/*display:none;*/
+	}
 
 
 .tabledrag-toggle-weight {

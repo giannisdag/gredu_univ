@@ -1,0 +1,30 @@
+<?php
+
+function save_attributes_user_login(&$edit, $account) {
+  $attributes = simplesamlphp_auth_get_attributes();
+  
+  if (!empty($attributes)) {
+	
+	if (isset($attributes['displayName'])) {
+      $edit['field_displayname'][LANGUAGE_NONE][0]['value'] = $attributes['displayName'][0];
+    }
+    if (isset($attributes['telephoneNumber'])) {
+      $edit['field_telephonenumber'][LANGUAGE_NONE][0]['value'] = $attributes['telephoneNumber'][0];
+    }
+	if (isset($attributes['eduPersonPrimaryAffiliation'])) {
+      $edit['field_edupersonprimaryaffiliatio'][LANGUAGE_NONE][0]['value'] = $attributes['eduPersonPrimaryAffiliation'];
+    }
+	if (isset($attributes['schacHomeOrganization'])) {
+      $edit['field_schachomeorganization'][LANGUAGE_NONE][0]['value'] = $attributes['schacHomeOrganization'];
+    }
+	if (isset($attributes['eduPersonOrgDN'])) {
+      $edit['field_edupersonorgdn'][LANGUAGE_NONE][0]['value'] = $attributes['eduPersonOrgDN'];
+    } 
+	
+	if (isset($attributes['eduPersonTargetedID'])) {
+      $edit['field_edupersontargetedid'][LANGUAGE_NONE][0]['value'] = $attributes['eduPersonTargetedID'];
+    } 
+	user_save($account, $edit);
+    }
+   
+  }
